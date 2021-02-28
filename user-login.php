@@ -146,38 +146,40 @@
 
 		<?php
 
+		if($firstName != "" && $lastName != "" && $gender != "" && $email != "" && $userName != "" && $password != "" && $rEmail != "")
+		{
+	
 
-				if($firstNameErr == "" && $lastNameErr == "" && $genderErr == "" && $emailErr == "" && $userNameErr == "" && $passwordErr == "" && $rEmailErr == "")
-				{
+			$File = "shatin.txt";
+			$Handle = fopen($File, 'a');				
+		
+			fwrite($Handle, $firstName); 
+			fwrite($Handle, ",");
+			fwrite($Handle, $lastName);
+			fwrite($Handle, ",");
+			fwrite($Handle, $gender);
+			fwrite($Handle, ",");
+			fwrite($Handle, $email);
+			fwrite($Handle, ",");
+			fwrite($Handle, $userName);
+			fwrite($Handle, ",");
+			fwrite($Handle, $password);
+			fwrite($Handle, ",");
+			fwrite($Handle, $rEmail);
+			fwrite($Handle, "\n");
 			
+			fclose($Handle); 
+		}
 
-					$File = "shatin.txt";
-					$Handle = fopen($File, 'a');
+		$file = "shatin.txt";
+		$open = fopen($file, 'r');
+		$read = readfile($file);
+		$line= (explode("\n", $read));
+		echo $line[0];
+		echo "<br>";
+		echo $line[1];
 
-					
-				
-					fwrite($Handle, $firstName); 
-					fwrite($Handle, ",");
-
-					fwrite($Handle, $lastName);
-					fwrite($Handle, ",");
-					fwrite($Handle, $gender);
-					fwrite($Handle, ",");
-					fwrite($Handle, $email);
-					fwrite($Handle, ",");
-					fwrite($Handle, $userName);
-					fwrite($Handle, ",");
-					fwrite($Handle, $password);
-					fwrite($Handle, ",");
-					fwrite($Handle, $rEmail);
-					fwrite($Handle, "\n");
-					
-					print "Data Written"; 
-
-					fclose($Handle); 
-				}
-			
-
+		fclose($open);
 		
 		?>
 
