@@ -1,2 +1,3 @@
-sdg,sdhgsdhg,male,shatin.hasan73@gmail.com,admin,asfasg,asgf@gmail.com
+sdg,sdhgsdhg,male,shatin.hasan73@gmail.com,root,1234,asgf@gmail.com
 Shatin,Hasan,male,shatin.hasan73@gmail.com,admin,1234,asgf@gmail.com
+Taufique,Islam,male,nobobisshatin@gmail.com,taufiqueislam,12345,asasdgsgf@gmail.com

@@ -173,11 +173,14 @@
 
 		$file = "shatin.txt";
 		$open = fopen($file, 'r');
-		$read = readfile($file);
+		$read = fread($open, filesize($file));
 		$line= (explode("\n", $read));
 		echo $line[0];
 		echo "<br>";
 		echo $line[1];
+		echo "<br>";
+		echo $line[2];
+		echo "<br>";
 
 		fclose($open);
 		
