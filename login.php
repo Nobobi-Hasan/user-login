@@ -66,6 +66,8 @@ session_start();
 	                echo "UserName: " . $_SESSION['userNameV'];
 	                echo "<br>";
 	                echo "Password is: " . $_SESSION['passwordV'];
+	                echo "<br>";
+	                echo "***Printed using SESSION***";
 	            }
 	        
 	            else
@@ -109,14 +111,12 @@ session_start();
 
 	    </form>
 
-	      <p style="color:red"><?php echo $userName; ?></p>
-	      <p style="color:red"><?php echo $password; ?></p>
 
       </center>
 
       <style>
       	fieldset{
-      		width: 40%;
+      		width: 30%;
       	}
       </style>
 

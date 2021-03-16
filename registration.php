@@ -185,7 +185,7 @@
 
     <style>
       fieldset{
-        width: 40%;
+        width: 30%;
         margin: auto;
       }
       h1{
