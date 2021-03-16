@@ -139,7 +139,10 @@
       </fieldset>
 		<br>
 
-		<input type="submit" value="Submit">
+    <center>
+      <input type="submit" value="Submit">
+    </center>
+		
 
 		</form>
 		<br>
@@ -175,16 +178,20 @@
 		$open = fopen($file, 'r');
 		$read = fread($open, filesize($file));
 		$line= (explode("\n", $read));
-		echo $line[0];
-		echo "<br>";
-		echo $line[1];
-		echo "<br>";
-		echo $line[2];
-		echo "<br>";
 
 		fclose($open);
 		
 		?>
+
+    <style>
+      fieldset{
+        width: 40%;
+        margin: auto;
+      }
+      h1{
+        text-align: center;
+      }
+    </style>
 
     </body>
 </html>

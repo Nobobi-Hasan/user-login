@@ -105,7 +105,7 @@ session_start();
 			<br>
 
 			<input type="submit" value="Login">
-			<a href="http://localhost/project/admin/adminManagement.php" title="">Not yet registered?</a>
+			<a href="user-login.php" title="">Not yet registered?</a>
 
 	    </form>
 
@@ -113,5 +113,12 @@ session_start();
 	      <p style="color:red"><?php echo $password; ?></p>
 
       </center>
+
+      <style>
+      	fieldset{
+      		width: 40%;
+      	}
+      </style>
+
     </body>
 </html>
